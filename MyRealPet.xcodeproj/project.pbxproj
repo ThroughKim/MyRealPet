@@ -18,6 +18,14 @@
 		E534467A2333C48100467102 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446792333C48100467102 /* Pet.swift */; };
 		E534467C2333C4D700467102 /* PetModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534467B2333C4D700467102 /* PetModelTest.swift */; };
 		E53446812333D15000467102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446802333D15000467102 /* ViewController.swift */; };
+		E53446832333D44A00467102 /* LibrariesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446822333D44A00467102 /* LibrariesManager.swift */; };
+		E53446852333D4B900467102 /* UIColor Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446842333D4B900467102 /* UIColor Extensions.swift */; };
+		E53446872333D56200467102 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446862333D56200467102 /* NavigationController.swift */; };
+		E53446892333D6BB00467102 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446882333D6BB00467102 /* ViewModel.swift */; };
+		E534468B2333D6F600467102 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468A2333D6F600467102 /* ActivityIndicator.swift */; };
+		E534468D2333D71100467102 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468C2333D71100467102 /* ErrorTracker.swift */; };
+		E534468F2333D8FE00467102 /* KafkaRefreshing+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468E2333D8FE00467102 /* KafkaRefreshing+Rx.swift */; };
+		E53446912333D99500467102 /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446902333D99500467102 /* PetListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		E53446792333C48100467102 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		E534467B2333C4D700467102 /* PetModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModelTest.swift; sourceTree = "<group>"; };
 		E53446802333D15000467102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E53446822333D44A00467102 /* LibrariesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrariesManager.swift; sourceTree = "<group>"; };
+		E53446842333D4B900467102 /* UIColor Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Extensions.swift"; sourceTree = "<group>"; };
+		E53446862333D56200467102 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E53446882333D6BB00467102 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E534468A2333D6F600467102 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E534468C2333D71100467102 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		E534468E2333D8FE00467102 /* KafkaRefreshing+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KafkaRefreshing+Rx.swift"; sourceTree = "<group>"; };
+		E53446902333D99500467102 /* PetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +168,8 @@
 		E53446702333C1B200467102 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E534468E2333D8FE00467102 /* KafkaRefreshing+Rx.swift */,
+				E53446842333D4B900467102 /* UIColor Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +177,8 @@
 		E53446712333C1C000467102 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E534468A2333D6F600467102 /* ActivityIndicator.swift */,
+				E534468C2333D71100467102 /* ErrorTracker.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -175,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E534464E2333C04D00467102 /* PetListViewController.swift */,
+				E53446902333D99500467102 /* PetListViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -191,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				E534464C2333C04D00467102 /* AppDelegate.swift */,
+				E53446822333D44A00467102 /* LibrariesManager.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -198,7 +220,9 @@
 		E534467F2333D13E00467102 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E53446862333D56200467102 /* NavigationController.swift */,
 				E53446802333D15000467102 /* ViewController.swift */,
+				E53446882333D6BB00467102 /* ViewModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -371,10 +395,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53446812333D15000467102 /* ViewController.swift in Sources */,
+				E53446912333D99500467102 /* PetListViewModel.swift in Sources */,
+				E53446892333D6BB00467102 /* ViewModel.swift in Sources */,
+				E53446872333D56200467102 /* NavigationController.swift in Sources */,
+				E534468F2333D8FE00467102 /* KafkaRefreshing+Rx.swift in Sources */,
+				E53446852333D4B900467102 /* UIColor Extensions.swift in Sources */,
 				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
+				E534468D2333D71100467102 /* ErrorTracker.swift in Sources */,
 				E534467A2333C48100467102 /* Pet.swift in Sources */,
+				E534468B2333D6F600467102 /* ActivityIndicator.swift in Sources */,
 				E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
+				E53446832333D44A00467102 /* LibrariesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

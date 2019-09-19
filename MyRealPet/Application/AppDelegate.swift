@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootVC = PetListViewController()
-        let navVC = UINavigationController(rootViewController: rootVC)
+        let rootVC = PetListViewController(viewModel: PetListViewModel(self.managedObjectContext))
+        let navVC = NavigationController(rootViewController: rootVC)
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
         
@@ -42,7 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     lazy var managedObjectModel: NSManagedObjectModel = {
-        let modelURL = Bundle.main.url(forResource: "Model", withExtension: "momd")!
+        guard let modelURL = Bundle.main.url(forResource: "MyRealPet", withExtension: "momd") else {
+            fatalError("Failed to find data model")
+        }
         return NSManagedObjectModel(contentsOf: modelURL)!
     }()
     

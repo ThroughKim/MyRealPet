@@ -1,0 +1,26 @@
+//
+//  KafkaRefreshing+Rx.swift
+//  MyRealPet
+//
+//  Created by Khoren Markosyan on 7/24/18.
+//  Copyright © 2018 Khoren Markosyan. All rights reserved.
+//
+
+import Foundation
+import RxCocoa
+import RxSwift
+import KafkaRefresh
+
+extension Reactive where Base: KafkaRefreshControl {
+    
+    public var isAnimating: Binder<Bool> {
+        return Binder(self.base) { refreshControl, active in
+            if active {
+//                refreshControl.beginRefreshing()
+            } else {
+                refreshControl.endRefreshing()
+            }
+        }
+    }
+}
+

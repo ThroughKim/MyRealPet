@@ -15,6 +15,9 @@ target 'MyRealPet' do
   # Auto Layout
   pod 'SnapKit', '~> 5.0'  # https://github.com/SnapKit/SnapKit
   
+  #UI
+  pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
+  
   target 'MyRealPetTests' do
     inherit! :search_paths
     # Pods for testing
