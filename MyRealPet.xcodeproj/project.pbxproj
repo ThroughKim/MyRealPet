@@ -44,6 +44,7 @@
 		E53446602333C04E00467102 /* MyRealPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRealPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53446642333C04E00467102 /* MyRealPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRealPetTests.swift; sourceTree = "<group>"; };
 		E53446662333C04E00467102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53446782333C2EE00467102 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 				E534464A2333C04D00467102 /* Products */,
 				103292A6D0EFA8895CD5F67F /* Pods */,
 				5B2F2C2EB3B5A5A7AB342011 /* Frameworks */,
+				E53446782333C2EE00467102 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
