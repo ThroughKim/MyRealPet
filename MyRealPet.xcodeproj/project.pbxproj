@@ -17,6 +17,7 @@
 		E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446642333C04E00467102 /* MyRealPetTests.swift */; };
 		E534467A2333C48100467102 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446792333C48100467102 /* Pet.swift */; };
 		E534467C2333C4D700467102 /* PetModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534467B2333C4D700467102 /* PetModelTest.swift */; };
+		E53446812333D15000467102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446802333D15000467102 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E53446782333C2EE00467102 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E53446792333C48100467102 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		E534467B2333C4D700467102 /* PetModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModelTest.swift; sourceTree = "<group>"; };
+		E53446802333D15000467102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				E53446752333C1DF00467102 /* Application */,
 				E53446742333C1D500467102 /* Models */,
+				E534467F2333D13E00467102 /* Common */,
 				E53446722333C1C800467102 /* Modules */,
 				E53446712333C1C000467102 /* Libraries */,
 				E53446702333C1B200467102 /* Extensions */,
@@ -190,6 +193,14 @@
 				E534464C2333C04D00467102 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		E534467F2333D13E00467102 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E53446802333D15000467102 /* ViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53446812333D15000467102 /* ViewController.swift in Sources */,
 				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
 				E534467A2333C48100467102 /* Pet.swift in Sources */,
 				E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */,
