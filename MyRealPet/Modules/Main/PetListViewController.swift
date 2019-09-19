@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PetListViewController.swift
 //  MyRealPet
 //
 //  Created by KimSeulWoo on 19/09/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PetListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

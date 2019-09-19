@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1739287835B4594B11B75A7C /* Pods_MyRealPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE53AAEB94ACD33FA5C5C26 /* Pods_MyRealPet.framework */; };
+		30FF3C9A6428EC1764DD93C5 /* Pods_MyRealPetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F86A6FE6C9A0AFC6A95344 /* Pods_MyRealPetTests.framework */; };
 		E534464D2333C04D00467102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464C2333C04D00467102 /* AppDelegate.swift */; };
-		E534464F2333C04D00467102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464E2333C04D00467102 /* ViewController.swift */; };
-		E53446522333C04D00467102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446502333C04D00467102 /* Main.storyboard */; };
+		E534464F2333C04D00467102 /* PetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464E2333C04D00467102 /* PetListViewController.swift */; };
 		E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */; };
 		E53446572333C04E00467102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53446562333C04E00467102 /* Assets.xcassets */; };
 		E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446582333C04E00467102 /* LaunchScreen.storyboard */; };
@@ -27,10 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F7276C5493CA41DE782766A /* Pods-MyRealPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRealPet.debug.xcconfig"; path = "Target Support Files/Pods-MyRealPet/Pods-MyRealPet.debug.xcconfig"; sourceTree = "<group>"; };
+		37FC5B9296901D78936E0DAF /* Pods-MyRealPet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRealPet.release.xcconfig"; path = "Target Support Files/Pods-MyRealPet/Pods-MyRealPet.release.xcconfig"; sourceTree = "<group>"; };
+		40950F3996C946A8EE5B686B /* Pods-MyRealPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRealPetTests.release.xcconfig"; path = "Target Support Files/Pods-MyRealPetTests/Pods-MyRealPetTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BE53AAEB94ACD33FA5C5C26 /* Pods_MyRealPet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRealPet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA0708F2F7233BC7ED3BA16 /* Pods-MyRealPetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyRealPetTests.debug.xcconfig"; path = "Target Support Files/Pods-MyRealPetTests/Pods-MyRealPetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1F86A6FE6C9A0AFC6A95344 /* Pods_MyRealPetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyRealPetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53446492333C04D00467102 /* MyRealPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRealPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E534464C2333C04D00467102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E534464E2333C04D00467102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E53446512333C04D00467102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E534464E2333C04D00467102 /* PetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewController.swift; sourceTree = "<group>"; };
 		E53446542333C04D00467102 /* MyRealPet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyRealPet.xcdatamodel; sourceTree = "<group>"; };
 		E53446562333C04E00467102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53446592333C04E00467102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1739287835B4594B11B75A7C /* Pods_MyRealPet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FF3C9A6428EC1764DD93C5 /* Pods_MyRealPetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		103292A6D0EFA8895CD5F67F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F7276C5493CA41DE782766A /* Pods-MyRealPet.debug.xcconfig */,
+				37FC5B9296901D78936E0DAF /* Pods-MyRealPet.release.xcconfig */,
+				8CA0708F2F7233BC7ED3BA16 /* Pods-MyRealPetTests.debug.xcconfig */,
+				40950F3996C946A8EE5B686B /* Pods-MyRealPetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B2F2C2EB3B5A5A7AB342011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BE53AAEB94ACD33FA5C5C26 /* Pods_MyRealPet.framework */,
+				A1F86A6FE6C9A0AFC6A95344 /* Pods_MyRealPetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E53446402333C04D00467102 = {
 			isa = PBXGroup;
 			children = (
 				E534464B2333C04D00467102 /* MyRealPet */,
 				E53446632333C04E00467102 /* MyRealPetTests */,
 				E534464A2333C04D00467102 /* Products */,
+				103292A6D0EFA8895CD5F67F /* Pods */,
+				5B2F2C2EB3B5A5A7AB342011 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,11 +109,12 @@
 		E534464B2333C04D00467102 /* MyRealPet */ = {
 			isa = PBXGroup;
 			children = (
-				E534464C2333C04D00467102 /* AppDelegate.swift */,
-				E534464E2333C04D00467102 /* ViewController.swift */,
-				E53446502333C04D00467102 /* Main.storyboard */,
-				E53446562333C04E00467102 /* Assets.xcassets */,
-				E53446582333C04E00467102 /* LaunchScreen.storyboard */,
+				E53446752333C1DF00467102 /* Application */,
+				E53446742333C1D500467102 /* Models */,
+				E53446722333C1C800467102 /* Modules */,
+				E53446712333C1C000467102 /* Libraries */,
+				E53446702333C1B200467102 /* Extensions */,
+				E534466F2333C1AC00467102 /* Resources */,
 				E534465B2333C04E00467102 /* Info.plist */,
 				E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */,
 			);
@@ -99,6 +130,60 @@
 			path = MyRealPetTests;
 			sourceTree = "<group>";
 		};
+		E534466F2333C1AC00467102 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E53446562333C04E00467102 /* Assets.xcassets */,
+				E53446582333C04E00467102 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E53446702333C1B200467102 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E53446712333C1C000467102 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E53446722333C1C800467102 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E53446732333C1CF00467102 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E53446732333C1CF00467102 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E534464E2333C04D00467102 /* PetListViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E53446742333C1D500467102 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E53446752333C1DF00467102 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E534464C2333C04D00467102 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53446692333C04E00467102 /* Build configuration list for PBXNativeTarget "MyRealPet" */;
 			buildPhases = (
+				A83B4CB569E0272432AF62D4 /* [CP] Check Pods Manifest.lock */,
 				E53446452333C04D00467102 /* Sources */,
 				E53446462333C04D00467102 /* Frameworks */,
 				E53446472333C04D00467102 /* Resources */,
@@ -123,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E534466C2333C04E00467102 /* Build configuration list for PBXNativeTarget "MyRealPetTests" */;
 			buildPhases = (
+				D7F25D581B9E55D01C37BD63 /* [CP] Check Pods Manifest.lock */,
 				E534465C2333C04E00467102 /* Sources */,
 				E534465D2333C04E00467102 /* Frameworks */,
 				E534465E2333C04E00467102 /* Resources */,
@@ -182,7 +269,6 @@
 			files = (
 				E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */,
 				E53446572333C04E00467102 /* Assets.xcassets in Resources */,
-				E53446522333C04D00467102 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +281,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A83B4CB569E0272432AF62D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyRealPet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F25D581B9E55D01C37BD63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyRealPetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E53446452333C04D00467102 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E534464F2333C04D00467102 /* ViewController.swift in Sources */,
+				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
 				E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
 			);
@@ -225,14 +358,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E53446502333C04D00467102 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E53446512333C04D00467102 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E53446582333C04E00467102 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -350,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,6 +487,7 @@
 		};
 		E534466A2333C04E00467102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7276C5493CA41DE782766A /* Pods-MyRealPet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +506,7 @@
 		};
 		E534466B2333C04E00467102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37FC5B9296901D78936E0DAF /* Pods-MyRealPet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +525,7 @@
 		};
 		E534466D2333C04E00467102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA0708F2F7233BC7ED3BA16 /* Pods-MyRealPetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +547,7 @@
 		};
 		E534466E2333C04E00467102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40950F3996C946A8EE5B686B /* Pods-MyRealPetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
