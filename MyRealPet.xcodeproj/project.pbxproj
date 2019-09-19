@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		E53446572333C04E00467102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53446562333C04E00467102 /* Assets.xcassets */; };
 		E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446582333C04E00467102 /* LaunchScreen.storyboard */; };
 		E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446642333C04E00467102 /* MyRealPetTests.swift */; };
+		E534467A2333C48100467102 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446792333C48100467102 /* Pet.swift */; };
+		E534467C2333C4D700467102 /* PetModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534467B2333C4D700467102 /* PetModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		E53446642333C04E00467102 /* MyRealPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRealPetTests.swift; sourceTree = "<group>"; };
 		E53446662333C04E00467102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53446782333C2EE00467102 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E53446792333C48100467102 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		E534467B2333C4D700467102 /* PetModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E53446642333C04E00467102 /* MyRealPetTests.swift */,
+				E534467B2333C4D700467102 /* PetModelTest.swift */,
 				E53446662333C04E00467102 /* Info.plist */,
 			);
 			path = MyRealPetTests;
@@ -174,6 +179,7 @@
 		E53446742333C1D500467102 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E53446792333C48100467102 /* Pet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
+				E534467A2333C48100467102 /* Pet.swift in Sources */,
 				E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
 			);
@@ -364,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */,
+				E534467C2333C4D700467102 /* PetModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
