@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E534464D2333C04D00467102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464C2333C04D00467102 /* AppDelegate.swift */; };
+		E534464F2333C04D00467102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464E2333C04D00467102 /* ViewController.swift */; };
+		E53446522333C04D00467102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446502333C04D00467102 /* Main.storyboard */; };
+		E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */; };
+		E53446572333C04E00467102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53446562333C04E00467102 /* Assets.xcassets */; };
+		E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446582333C04E00467102 /* LaunchScreen.storyboard */; };
+		E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446642333C04E00467102 /* MyRealPetTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E53446612333C04E00467102 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53446412333C04D00467102 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53446482333C04D00467102;
+			remoteInfo = MyRealPet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E53446492333C04D00467102 /* MyRealPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRealPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E534464C2333C04D00467102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E534464E2333C04D00467102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E53446512333C04D00467102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E53446542333C04D00467102 /* MyRealPet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyRealPet.xcdatamodel; sourceTree = "<group>"; };
+		E53446562333C04E00467102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E53446592333C04E00467102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E534465B2333C04E00467102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53446602333C04E00467102 /* MyRealPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRealPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53446642333C04E00467102 /* MyRealPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRealPetTests.swift; sourceTree = "<group>"; };
+		E53446662333C04E00467102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E53446462333C04D00467102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E534465D2333C04E00467102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E53446402333C04D00467102 = {
+			isa = PBXGroup;
+			children = (
+				E534464B2333C04D00467102 /* MyRealPet */,
+				E53446632333C04E00467102 /* MyRealPetTests */,
+				E534464A2333C04D00467102 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E534464A2333C04D00467102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E53446492333C04D00467102 /* MyRealPet.app */,
+				E53446602333C04E00467102 /* MyRealPetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E534464B2333C04D00467102 /* MyRealPet */ = {
+			isa = PBXGroup;
+			children = (
+				E534464C2333C04D00467102 /* AppDelegate.swift */,
+				E534464E2333C04D00467102 /* ViewController.swift */,
+				E53446502333C04D00467102 /* Main.storyboard */,
+				E53446562333C04E00467102 /* Assets.xcassets */,
+				E53446582333C04E00467102 /* LaunchScreen.storyboard */,
+				E534465B2333C04E00467102 /* Info.plist */,
+				E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */,
+			);
+			path = MyRealPet;
+			sourceTree = "<group>";
+		};
+		E53446632333C04E00467102 /* MyRealPetTests */ = {
+			isa = PBXGroup;
+			children = (
+				E53446642333C04E00467102 /* MyRealPetTests.swift */,
+				E53446662333C04E00467102 /* Info.plist */,
+			);
+			path = MyRealPetTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E53446482333C04D00467102 /* MyRealPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53446692333C04E00467102 /* Build configuration list for PBXNativeTarget "MyRealPet" */;
+			buildPhases = (
+				E53446452333C04D00467102 /* Sources */,
+				E53446462333C04D00467102 /* Frameworks */,
+				E53446472333C04D00467102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRealPet;
+			productName = MyRealPet;
+			productReference = E53446492333C04D00467102 /* MyRealPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E534465F2333C04E00467102 /* MyRealPetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E534466C2333C04E00467102 /* Build configuration list for PBXNativeTarget "MyRealPetTests" */;
+			buildPhases = (
+				E534465C2333C04E00467102 /* Sources */,
+				E534465D2333C04E00467102 /* Frameworks */,
+				E534465E2333C04E00467102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E53446622333C04E00467102 /* PBXTargetDependency */,
+			);
+			name = MyRealPetTests;
+			productName = MyRealPetTests;
+			productReference = E53446602333C04E00467102 /* MyRealPetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E53446412333C04D00467102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Test;
+				TargetAttributes = {
+					E53446482333C04D00467102 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E534465F2333C04E00467102 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E53446482333C04D00467102;
+					};
+				};
+			};
+			buildConfigurationList = E53446442333C04D00467102 /* Build configuration list for PBXProject "MyRealPet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E53446402333C04D00467102;
+			productRefGroup = E534464A2333C04D00467102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E53446482333C04D00467102 /* MyRealPet */,
+				E534465F2333C04E00467102 /* MyRealPetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E53446472333C04D00467102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */,
+				E53446572333C04E00467102 /* Assets.xcassets in Resources */,
+				E53446522333C04D00467102 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E534465E2333C04E00467102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E53446452333C04D00467102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E534464F2333C04D00467102 /* ViewController.swift in Sources */,
+				E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */,
+				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E534465C2333C04E00467102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E53446622333C04E00467102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53446482333C04D00467102 /* MyRealPet */;
+			targetProxy = E53446612333C04E00467102 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E53446502333C04D00467102 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E53446512333C04D00467102 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E53446582333C04E00467102 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E53446592333C04E00467102 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E53446672333C04E00467102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E53446682333C04E00467102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E534466A2333C04E00467102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5235E257YY;
+				INFOPLIST_FILE = MyRealPet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyRealPet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E534466B2333C04E00467102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5235E257YY;
+				INFOPLIST_FILE = MyRealPet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyRealPet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E534466D2333C04E00467102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5235E257YY;
+				INFOPLIST_FILE = MyRealPetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyRealPetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRealPet.app/MyRealPet";
+			};
+			name = Debug;
+		};
+		E534466E2333C04E00467102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5235E257YY;
+				INFOPLIST_FILE = MyRealPetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyRealPetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRealPet.app/MyRealPet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E53446442333C04D00467102 /* Build configuration list for PBXProject "MyRealPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53446672333C04E00467102 /* Debug */,
+				E53446682333C04E00467102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53446692333C04E00467102 /* Build configuration list for PBXNativeTarget "MyRealPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E534466A2333C04E00467102 /* Debug */,
+				E534466B2333C04E00467102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E534466C2333C04E00467102 /* Build configuration list for PBXNativeTarget "MyRealPetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E534466D2333C04E00467102 /* Debug */,
+				E534466E2333C04E00467102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E53446542333C04D00467102 /* MyRealPet.xcdatamodel */,
+			);
+			currentVersion = E53446542333C04D00467102 /* MyRealPet.xcdatamodel */;
+			path = MyRealPet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E53446412333C04D00467102 /* Project object */;
+}
