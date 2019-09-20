@@ -9,7 +9,8 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import CoreData
+import RxRealm
+import RealmSwift
 
 protocol ViewModelType {
     associatedtype Input
@@ -20,8 +21,7 @@ protocol ViewModelType {
 
 class ViewModel: NSObject {
     
-    var page = 1
-    let managedObjectContext: NSManagedObjectContext
+    let realm: Realm
     
     let loading = ActivityIndicator()
     let headerLoading = ActivityIndicator()
@@ -30,8 +30,8 @@ class ViewModel: NSObject {
     let error = ErrorTracker()
     let parsedError = PublishSubject<Error>()
     
-    init(_ managedObjectContext: NSManagedObjectContext) {
-        self.managedObjectContext = managedObjectContext
+    override init() {
+        self.realm = try! Realm()
         super.init()
         
         error.asObservable().bind(to: parsedError).disposed(by: rx.disposeBag)

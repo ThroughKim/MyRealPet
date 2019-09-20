@@ -11,7 +11,6 @@
 		30FF3C9A6428EC1764DD93C5 /* Pods_MyRealPetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F86A6FE6C9A0AFC6A95344 /* Pods_MyRealPetTests.framework */; };
 		E534464D2333C04D00467102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464C2333C04D00467102 /* AppDelegate.swift */; };
 		E534464F2333C04D00467102 /* PetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534464E2333C04D00467102 /* PetListViewController.swift */; };
-		E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */; };
 		E53446572333C04E00467102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53446562333C04E00467102 /* Assets.xcassets */; };
 		E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446582333C04E00467102 /* LaunchScreen.storyboard */; };
 		E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446642333C04E00467102 /* MyRealPetTests.swift */; };
@@ -24,7 +23,6 @@
 		E53446892333D6BB00467102 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446882333D6BB00467102 /* ViewModel.swift */; };
 		E534468B2333D6F600467102 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468A2333D6F600467102 /* ActivityIndicator.swift */; };
 		E534468D2333D71100467102 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468C2333D71100467102 /* ErrorTracker.swift */; };
-		E534468F2333D8FE00467102 /* KafkaRefreshing+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468E2333D8FE00467102 /* KafkaRefreshing+Rx.swift */; };
 		E53446912333D99500467102 /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446902333D99500467102 /* PetListViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +46,6 @@
 		E53446492333C04D00467102 /* MyRealPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRealPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E534464C2333C04D00467102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E534464E2333C04D00467102 /* PetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewController.swift; sourceTree = "<group>"; };
-		E53446542333C04D00467102 /* MyRealPet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyRealPet.xcdatamodel; sourceTree = "<group>"; };
 		E53446562333C04E00467102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53446592333C04E00467102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E534465B2333C04E00467102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		E53446882333D6BB00467102 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E534468A2333D6F600467102 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E534468C2333D71100467102 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
-		E534468E2333D8FE00467102 /* KafkaRefreshing+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KafkaRefreshing+Rx.swift"; sourceTree = "<group>"; };
 		E53446902333D99500467102 /* PetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +137,6 @@
 				E53446702333C1B200467102 /* Extensions */,
 				E534466F2333C1AC00467102 /* Resources */,
 				E534465B2333C04E00467102 /* Info.plist */,
-				E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */,
 			);
 			path = MyRealPet;
 			sourceTree = "<group>";
@@ -168,7 +163,6 @@
 		E53446702333C1B200467102 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E534468E2333D8FE00467102 /* KafkaRefreshing+Rx.swift */,
 				E53446842333D4B900467102 /* UIColor Extensions.swift */,
 			);
 			path = Extensions;
@@ -398,13 +392,11 @@
 				E53446912333D99500467102 /* PetListViewModel.swift in Sources */,
 				E53446892333D6BB00467102 /* ViewModel.swift in Sources */,
 				E53446872333D56200467102 /* NavigationController.swift in Sources */,
-				E534468F2333D8FE00467102 /* KafkaRefreshing+Rx.swift in Sources */,
 				E53446852333D4B900467102 /* UIColor Extensions.swift in Sources */,
 				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
 				E534468D2333D71100467102 /* ErrorTracker.swift in Sources */,
 				E534467A2333C48100467102 /* Pet.swift in Sources */,
 				E534468B2333D6F600467102 /* ActivityIndicator.swift in Sources */,
-				E53446552333C04D00467102 /* MyRealPet.xcdatamodeld in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
 				E53446832333D44A00467102 /* LibrariesManager.swift in Sources */,
 			);
@@ -670,19 +662,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E53446532333C04D00467102 /* MyRealPet.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E53446542333C04D00467102 /* MyRealPet.xcdatamodel */,
-			);
-			currentVersion = E53446542333C04D00467102 /* MyRealPet.xcdatamodel */;
-			path = MyRealPet.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E53446412333C04D00467102 /* Project object */;
 }

@@ -10,13 +10,10 @@ target 'MyRealPet' do
   pod 'RxViewController', '~> 1.0'  # https://github.com/devxoul/RxViewController
   pod 'RxOptional', '~> 4.0'  # https://github.com/RxSwiftCommunity/RxOptional
   pod 'NSObject+Rx', '~> 5.0'  # https://github.com/RxSwiftCommunity/NSObject-Rx
-  pod 'RxCoreData', '~> 1.0.0' # https://github.com/RxSwiftCommunity/RxCoreData
+  pod 'RxRealm', '~> 1.0.0' # https://github.com/RxSwiftCommunity/RxCoreData
   
   # Auto Layout
   pod 'SnapKit', '~> 5.0'  # https://github.com/SnapKit/SnapKit
-  
-  #UI
-  pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
   
   target 'MyRealPetTests' do
     inherit! :search_paths

@@ -14,8 +14,6 @@ import RxDataSources
 class PetListViewModel: ViewModel, ViewModelType {
     
     struct Input {
-        let headerRefresh: Observable<Void>
-        let footerRefresh: Observable<Void>
     }
     
     struct Output {
@@ -27,36 +25,16 @@ class PetListViewModel: ViewModel, ViewModelType {
         let title = Driver.just("마이리얼펫")
         let items = BehaviorRelay<[String]>(value: [])
         
-        input.headerRefresh.flatMapLatest({ [weak self] () -> Observable<[String]> in
-            guard let self = self else { return Observable.just([]) }
-            self.page = 1
-            return self.request()
-                .trackActivity(self.headerLoading)
-        })
-            .subscribe(onNext: { responseItems in
-                items.accept(responseItems)
-            }).disposed(by: rx.disposeBag)
-        
-        input.footerRefresh.flatMapLatest({ [weak self] () -> Observable<[String]> in
-            guard let self = self else { return Observable.just([]) }
-            self.page += 1
-            return self.request()
-                .trackActivity(self.footerLoading)
-        })
-            .subscribe(onNext: { responseItems in
-                items.accept(items.value + responseItems)
-            }).disposed(by: rx.disposeBag)
+        let pets = realm.objects(Pet.self)
+        Observable.collection(from: pets)
+            .map { result in result.elements.map{ $0.name } }
+            .bind(to: items)
+            .disposed(by: rx.disposeBag)
         
         return Output(
             navigationTitle: title,
             items: items
         )
-    }
-
-    func fetch() -> Observable<[String]> {
-        return managedObjectContext.rx.entities(Pet.self)
-            .map{$0.map{$0.name}}
-        
     }
     
 }

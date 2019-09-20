@@ -12,7 +12,8 @@ import RxCocoa
 import SnapKit
 import NSObject_Rx
 import RxOptional
-import KafkaRefresh
+import RealmSwift
+import RxRealm
 
 class LibrariesManager: NSObject {
     
@@ -20,15 +21,20 @@ class LibrariesManager: NSObject {
     
     func setupLibs() {
         let librariesManager = LibrariesManager.shared
-        librariesManager.setupKafkaRefresh()
+        librariesManager.setupRealm()
     }
     
-    private func setupKafkaRefresh() {
-        if let defaults = KafkaRefreshDefaults.standard() {
-            defaults.headDefaultStyle = .replicatorCircle
-            defaults.footDefaultStyle = .replicatorCircle
-            defaults.themeColor = .primary
-        }
+    func setupRealm() {
+        let config = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 1) {
+                    // Nothing to do!
+                    // Realm will automatically detect new properties and removed properties
+                    // And will update the schema on disk automatically
+                }
+        })
+        Realm.Configuration.defaultConfiguration = config
     }
     
 }
