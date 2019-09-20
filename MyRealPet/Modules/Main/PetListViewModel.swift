@@ -14,6 +14,7 @@ import RxDataSources
 class PetListViewModel: ViewModel, ViewModelType {
     
     struct Input {
+        let loadTrigger: Driver<Void>
     }
     
     struct Output {
@@ -25,12 +26,15 @@ class PetListViewModel: ViewModel, ViewModelType {
         let title = Driver.just("마이리얼펫")
         let items = BehaviorRelay<[PetListCellViewModel]>(value: [])
         
-        let pets = realm.objects(Pet.self)
-        Observable.collection(from: pets)
-            .map { $0.elements }
-            .map { $0.map { PetListCellViewModel(with: $0) } }
-            .bind(to: items)
-            .disposed(by: rx.disposeBag)
+        _ = input.loadTrigger.drive(onNext: { [weak self] _ in
+            guard let self = self else { return }
+            let pets = self.realm.objects(Pet.self)
+            Observable.collection(from: pets)
+                .map { $0.elements }
+                .map { $0.map { PetListCellViewModel(with: $0) } }
+                .bind(to: items)
+                .disposed(by: self.rx.disposeBag)
+        })
         
         return Output(
             navigationTitle: title,

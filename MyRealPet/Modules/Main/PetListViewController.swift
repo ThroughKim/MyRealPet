@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxViewController
 
 class PetListViewController: ViewController, UIScrollViewDelegate {
     
@@ -38,7 +39,13 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
         
         guard let viewModel = viewModel as? PetListViewModel else { return }
         
-        let input = PetListViewModel.Input()
+        let viewWillAppear = rx.viewWillAppear
+            .map{ _ in }
+            .asDriver(onErrorJustReturn: ())
+        
+        let input = PetListViewModel.Input(
+            loadTrigger: viewWillAppear
+        )
         let output = viewModel.transform(input: input)
         
         output.navigationTitle.drive(onNext: { [weak self] title in
