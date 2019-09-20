@@ -55,6 +55,18 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
         
+        tableView.rx.modelSelected(PetListCellViewModel.self)
+            .map { $0.pet.sound }
+            .filterNil()
+            .subscribe(onNext: { [weak self] sound in
+                self?.showAlert(title: sound, body: "")
+            }).disposed(by: rx.disposeBag)
+        
+        tableView.rx.itemSelected
+            .map{ (at: $0, animated: true) }
+            .subscribe(onNext: tableView.deselectRow)
+            .disposed(by: rx.disposeBag)
+        
     }
 
 }

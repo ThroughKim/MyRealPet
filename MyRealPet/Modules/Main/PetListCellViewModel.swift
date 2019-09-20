@@ -13,8 +13,6 @@ import RxCocoa
 class PetListCellViewModel: NSObject {
     let pet: Pet
     
-    let petSelected = PublishSubject<Pet>()
-    
     let type = BehaviorRelay<String?>(value: nil)
     let name = BehaviorRelay<String?>(value: nil)
     
