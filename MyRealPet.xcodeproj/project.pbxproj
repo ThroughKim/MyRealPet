@@ -15,7 +15,6 @@
 		E534465A2333C04E00467102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53446582333C04E00467102 /* LaunchScreen.storyboard */; };
 		E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446642333C04E00467102 /* MyRealPetTests.swift */; };
 		E534467A2333C48100467102 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446792333C48100467102 /* Pet.swift */; };
-		E534467C2333C4D700467102 /* PetModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534467B2333C4D700467102 /* PetModelTest.swift */; };
 		E53446812333D15000467102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446802333D15000467102 /* ViewController.swift */; };
 		E53446832333D44A00467102 /* LibrariesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446822333D44A00467102 /* LibrariesManager.swift */; };
 		E53446852333D4B900467102 /* UIColor Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446842333D4B900467102 /* UIColor Extensions.swift */; };
@@ -54,7 +53,6 @@
 		E53446662333C04E00467102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53446782333C2EE00467102 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E53446792333C48100467102 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
-		E534467B2333C4D700467102 /* PetModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModelTest.swift; sourceTree = "<group>"; };
 		E53446802333D15000467102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E53446822333D44A00467102 /* LibrariesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrariesManager.swift; sourceTree = "<group>"; };
 		E53446842333D4B900467102 /* UIColor Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Extensions.swift"; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				E53446642333C04E00467102 /* MyRealPetTests.swift */,
-				E534467B2333C4D700467102 /* PetModelTest.swift */,
 				E53446662333C04E00467102 /* Info.plist */,
 			);
 			path = MyRealPetTests;
@@ -407,7 +404,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53446652333C04E00467102 /* MyRealPetTests.swift in Sources */,
-				E534467C2333C4D700467102 /* PetModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
