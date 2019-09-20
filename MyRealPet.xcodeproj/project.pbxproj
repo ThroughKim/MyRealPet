@@ -25,6 +25,7 @@
 		E572EE6A2335052500E8068A /* PetListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE692335052500E8068A /* PetListCellViewModel.swift */; };
 		E572EE6C23350BD700E8068A /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE6B23350BD700E8068A /* UIView Extensions.swift */; };
 		E572EE6E23350E8B00E8068A /* UIViewController Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE6D23350E8B00E8068A /* UIViewController Extensions.swift */; };
+		E572EE712335188200E8068A /* AddPetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE702335188200E8068A /* AddPetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		E572EE692335052500E8068A /* PetListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListCellViewModel.swift; sourceTree = "<group>"; };
 		E572EE6B23350BD700E8068A /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
 		E572EE6D23350E8B00E8068A /* UIViewController Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController Extensions.swift"; sourceTree = "<group>"; };
+		E572EE702335188200E8068A /* AddPetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		E53446722333C1C800467102 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E572EE6F2335187200E8068A /* Add */,
 				E53446732333C1CF00467102 /* Main */,
 			);
 			path = Modules;
@@ -222,6 +225,14 @@
 				E53446882333D6BB00467102 /* ViewModel.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E572EE6F2335187200E8068A /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E572EE702335188200E8068A /* AddPetViewModel.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +410,7 @@
 				E53446852333D4B900467102 /* UIColor Extensions.swift in Sources */,
 				E572EE682335051500E8068A /* PetListCell.swift in Sources */,
 				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
+				E572EE712335188200E8068A /* AddPetViewModel.swift in Sources */,
 				E572EE6A2335052500E8068A /* PetListCellViewModel.swift in Sources */,
 				E534467A2333C48100467102 /* Pet.swift in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
