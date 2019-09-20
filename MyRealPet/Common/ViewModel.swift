@@ -23,18 +23,9 @@ class ViewModel: NSObject {
     
     let realm: Realm
     
-    let loading = ActivityIndicator()
-    let headerLoading = ActivityIndicator()
-    let footerLoading = ActivityIndicator()
-    
-    let error = ErrorTracker()
-    let parsedError = PublishSubject<Error>()
-    
     override init() {
         self.realm = try! Realm()
         super.init()
-        
-        error.asObservable().bind(to: parsedError).disposed(by: rx.disposeBag)
     }
     
 }
