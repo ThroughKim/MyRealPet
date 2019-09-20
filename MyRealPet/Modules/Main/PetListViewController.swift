@@ -30,12 +30,7 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
 
     override func setupUI() {
         super.setupUI()
-        self.view.backgroundColor = .lightGray
-        
-        error.subscribe(onNext: { error in
-            print(error.localizedDescription)
-        }).disposed(by: rx.disposeBag)
-        
+        self.view.backgroundColor = .white
     }
     
     override func bindViewModel() {
@@ -54,6 +49,10 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
             .drive(tableView.rx.items(cellIdentifier: "cell", cellType: PetListCell.self)) { tableView, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
+        
+        error.subscribe(onNext: { [weak self] error in
+                self?.showAlert(title: "오류", body: error.localizedDescription)
+            }).disposed(by: rx.disposeBag)
         
         tableView.rx.modelSelected(PetListCellViewModel.self)
             .map { $0.pet.sound }
