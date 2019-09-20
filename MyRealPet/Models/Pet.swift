@@ -12,6 +12,16 @@ import RealmSwift
 class Pet: Object {
     enum Species: Int {
         case Unknown = 0, Cat, Dog, Parrot, Lizard
+        
+        func getEmoji() -> String {
+            switch self {
+            case .Cat: return "🐱"
+            case .Dog: return "🐶"
+            case .Parrot: return "🦜"
+            case .Lizard: return "🦎"
+            case .Unknown: return "👾"
+            }
+        }
     }
     
     @objc dynamic var id = UUID().uuidString

@@ -23,6 +23,9 @@
 		E534468B2333D6F600467102 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468A2333D6F600467102 /* ActivityIndicator.swift */; };
 		E534468D2333D71100467102 /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E534468C2333D71100467102 /* ErrorTracker.swift */; };
 		E53446912333D99500467102 /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53446902333D99500467102 /* PetListViewModel.swift */; };
+		E572EE682335051500E8068A /* PetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE672335051500E8068A /* PetListCell.swift */; };
+		E572EE6A2335052500E8068A /* PetListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE692335052500E8068A /* PetListCellViewModel.swift */; };
+		E572EE6C23350BD700E8068A /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE6B23350BD700E8068A /* UIView Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		E534468A2333D6F600467102 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E534468C2333D71100467102 /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		E53446902333D99500467102 /* PetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
+		E572EE672335051500E8068A /* PetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListCell.swift; sourceTree = "<group>"; };
+		E572EE692335052500E8068A /* PetListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListCellViewModel.swift; sourceTree = "<group>"; };
+		E572EE6B23350BD700E8068A /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				E53446842333D4B900467102 /* UIColor Extensions.swift */,
+				E572EE6B23350BD700E8068A /* UIView Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,6 +192,8 @@
 		E53446732333C1CF00467102 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E572EE672335051500E8068A /* PetListCell.swift */,
+				E572EE692335052500E8068A /* PetListCellViewModel.swift */,
 				E534464E2333C04D00467102 /* PetListViewController.swift */,
 				E53446902333D99500467102 /* PetListViewModel.swift */,
 			);
@@ -390,12 +399,15 @@
 				E53446892333D6BB00467102 /* ViewModel.swift in Sources */,
 				E53446872333D56200467102 /* NavigationController.swift in Sources */,
 				E53446852333D4B900467102 /* UIColor Extensions.swift in Sources */,
+				E572EE682335051500E8068A /* PetListCell.swift in Sources */,
 				E534464F2333C04D00467102 /* PetListViewController.swift in Sources */,
 				E534468D2333D71100467102 /* ErrorTracker.swift in Sources */,
+				E572EE6A2335052500E8068A /* PetListCellViewModel.swift in Sources */,
 				E534467A2333C48100467102 /* Pet.swift in Sources */,
 				E534468B2333D6F600467102 /* ActivityIndicator.swift in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
 				E53446832333D44A00467102 /* LibrariesManager.swift in Sources */,
+				E572EE6C23350BD700E8068A /* UIView Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

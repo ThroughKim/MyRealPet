@@ -18,16 +18,17 @@ class PetListViewModel: ViewModel, ViewModelType {
     
     struct Output {
         let navigationTitle: Driver<String>
-        let items: BehaviorRelay<[String]>
+        let items: BehaviorRelay<[PetListCellViewModel]>
     }
     
     func transform(input: PetListViewModel.Input) -> PetListViewModel.Output {
         let title = Driver.just("마이리얼펫")
-        let items = BehaviorRelay<[String]>(value: [])
+        let items = BehaviorRelay<[PetListCellViewModel]>(value: [])
         
         let pets = realm.objects(Pet.self)
         Observable.collection(from: pets)
-            .map { result in result.elements.map{ $0.name } }
+            .map { $0.elements }
+            .map { $0.map { PetListCellViewModel(with: $0) } }
             .bind(to: items)
             .disposed(by: rx.disposeBag)
         

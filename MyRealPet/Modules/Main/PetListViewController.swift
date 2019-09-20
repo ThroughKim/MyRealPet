@@ -25,7 +25,7 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(PetListCell.self, forCellReuseIdentifier: "cell")
     }
 
     override func setupUI() {
@@ -51,8 +51,8 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
         }).disposed(by: rx.disposeBag)
         
         output.items.asDriver(onErrorJustReturn: [])
-            .drive(tableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { tableView, viewModel, cell in
-                cell.textLabel?.text = viewModel
+            .drive(tableView.rx.items(cellIdentifier: "cell", cellType: PetListCell.self)) { tableView, viewModel, cell in
+                cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
         
     }
