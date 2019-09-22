@@ -23,7 +23,7 @@ class PetListViewModel: ViewModel, ViewModelType {
     }
     
     func transform(input: PetListViewModel.Input) -> PetListViewModel.Output {
-        let title = Driver.just("마이리얼펫")
+        let title = Driver.just("펫 리스트")
         let items = BehaviorRelay<[PetListCellViewModel]>(value: [])
         
         _ = input.loadTrigger.drive(onNext: { [weak self] _ in

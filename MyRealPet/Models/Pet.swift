@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class Pet: Object {
-    enum Species: Int {
+    enum Species: Int, CaseIterable {
         case Unknown = 0, Cat, Dog, Parrot, Lizard
         
         func getEmoji() -> String {
@@ -20,6 +20,15 @@ class Pet: Object {
             case .Parrot: return "🦜"
             case .Lizard: return "🦎"
             case .Unknown: return "👾"
+            }
+        }
+        func getString() -> String {
+            switch self {
+            case .Cat: return "고양이"
+            case .Dog: return "강아지"
+            case .Parrot: return "앵무새"
+            case .Lizard: return "도마뱀"
+            case .Unknown: return "???"
             }
         }
     }

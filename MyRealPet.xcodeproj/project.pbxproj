@@ -232,8 +232,8 @@
 		E572EE6F2335187200E8068A /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				E572EE702335188200E8068A /* AddPetViewModel.swift */,
 				E58FB11F23375BB1004521ED /* AddPetViewController.swift */,
+				E572EE702335188200E8068A /* AddPetViewModel.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";

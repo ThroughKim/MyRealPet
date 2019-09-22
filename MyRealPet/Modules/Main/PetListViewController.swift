@@ -36,7 +36,6 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
 
     override func setupUI() {
         super.setupUI()
-        self.view.backgroundColor = .white
     }
     
     override func bindViewModel() {
