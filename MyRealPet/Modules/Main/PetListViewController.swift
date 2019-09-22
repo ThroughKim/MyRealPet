@@ -13,6 +13,10 @@ import RxViewController
 
 class PetListViewController: ViewController, UIScrollViewDelegate {
     
+    lazy var addButton: UIBarButtonItem = {
+        return UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+    }()
+    
     lazy var tableView: UITableView = {
         let view = UITableView(frame: CGRect(), style: .plain)
         view.rx.setDelegate(self).disposed(by: rx.disposeBag)
@@ -26,6 +30,7 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.rightBarButtonItem = addButton
         tableView.register(PetListCell.self, forCellReuseIdentifier: "cell")
     }
 
@@ -72,6 +77,12 @@ class PetListViewController: ViewController, UIScrollViewDelegate {
             .map{ (at: $0, animated: true) }
             .subscribe(onNext: tableView.deselectRow)
             .disposed(by: rx.disposeBag)
+        
+        addButton.rx.tap.asDriver()
+            .drive(onNext: { [weak self] _ in
+                let addPetViewModel = AddPetViewModel()
+                self?.navigationController?.pushViewController(AddPetViewController(viewModel: addPetViewModel), animated: true)
+            }).disposed(by: rx.disposeBag)
         
     }
 

@@ -8,6 +8,12 @@
 
 import UIKit
 
-class AddPetViewModel: NSObject {
+class AddPetViewModel: ViewModel, ViewModelType {
+    struct Input {}
+    struct Output {}
+    
+    func transform(input: AddPetViewModel.Input) -> AddPetViewModel.Output {
+        return Output()
+    }
 
 }

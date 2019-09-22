@@ -26,6 +26,7 @@
 		E572EE6C23350BD700E8068A /* UIView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE6B23350BD700E8068A /* UIView Extensions.swift */; };
 		E572EE6E23350E8B00E8068A /* UIViewController Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE6D23350E8B00E8068A /* UIViewController Extensions.swift */; };
 		E572EE712335188200E8068A /* AddPetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572EE702335188200E8068A /* AddPetViewModel.swift */; };
+		E58FB12023375BB1004521ED /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FB11F23375BB1004521ED /* AddPetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E572EE6B23350BD700E8068A /* UIView Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extensions.swift"; sourceTree = "<group>"; };
 		E572EE6D23350E8B00E8068A /* UIViewController Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController Extensions.swift"; sourceTree = "<group>"; };
 		E572EE702335188200E8068A /* AddPetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewModel.swift; sourceTree = "<group>"; };
+		E58FB11F23375BB1004521ED /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				E572EE702335188200E8068A /* AddPetViewModel.swift */,
+				E58FB11F23375BB1004521ED /* AddPetViewController.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				E572EE6A2335052500E8068A /* PetListCellViewModel.swift in Sources */,
 				E534467A2333C48100467102 /* Pet.swift in Sources */,
 				E534464D2333C04D00467102 /* AppDelegate.swift in Sources */,
+				E58FB12023375BB1004521ED /* AddPetViewController.swift in Sources */,
 				E53446832333D44A00467102 /* LibrariesManager.swift in Sources */,
 				E572EE6C23350BD700E8068A /* UIView Extensions.swift in Sources */,
 			);
