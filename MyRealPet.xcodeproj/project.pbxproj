@@ -139,7 +139,6 @@
 				E53446742333C1D500467102 /* Models */,
 				E534467F2333D13E00467102 /* Common */,
 				E53446722333C1C800467102 /* Modules */,
-				E53446712333C1C000467102 /* Libraries */,
 				E53446702333C1B200467102 /* Extensions */,
 				E534466F2333C1AC00467102 /* Resources */,
 				E534465B2333C04E00467102 /* Info.plist */,
@@ -173,13 +172,6 @@
 				E572EE6D23350E8B00E8068A /* UIViewController Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E53446712333C1C000467102 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
 			sourceTree = "<group>";
 		};
 		E53446722333C1C800467102 /* Modules */ = {
