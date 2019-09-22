@@ -46,7 +46,6 @@ class PetListCell: UITableViewCell {
         contentView.addSubview(stackView)
         stackView.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20))
-            make.height.greaterThanOrEqualTo(55)
         }
     }
     

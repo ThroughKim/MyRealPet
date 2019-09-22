@@ -36,6 +36,7 @@ class Pet: Object {
     @objc dynamic var id = UUID().uuidString
     @objc private dynamic var speciesCode: Int = 0
     @objc dynamic var name: String = "이름없음"
+    @objc dynamic var created: Date = Date()
     
     var type: Species {
         get { return Species(rawValue: speciesCode) ?? .Unknown }

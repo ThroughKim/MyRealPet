@@ -28,7 +28,7 @@ class PetListViewModel: ViewModel, ViewModelType {
         
         _ = input.loadTrigger.drive(onNext: { [weak self] _ in
             guard let self = self else { return }
-            let pets = self.realm.objects(Pet.self)
+            let pets = self.realm.objects(Pet.self).sorted(byKeyPath: "created", ascending: false)
             Observable.collection(from: pets)
                 .map { $0.elements }
                 .map { $0.map { PetListCellViewModel(with: $0) } }
